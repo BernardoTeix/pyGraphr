@@ -124,6 +124,7 @@ class GUIManager:
             if event.user_type == pygame_gui.UI_BUTTON_PRESSED:
 
                 if event.ui_element == self.begin_button:
+                    self.algorithm_dropdown.selected_option[0]
                     selected_algorithm = self.algorithm_dropdown.selected_option
                     print("[ALGO] Begin search for search algorithm:", selected_algorithm)
                     self.visit_order, self.found_path = self.algorithms.perform_search(selected_algorithm,

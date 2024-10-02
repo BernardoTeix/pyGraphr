@@ -8,11 +8,11 @@ class PyGraphr:
         print("[ROOT] Starting pyGame...")
         pygame.init()
         pygame.display.set_caption('pyGraphr v1.4 - A Python Graph Traversal Visualizer')
-        pygame_icon = pygame.image.load('utils/pygraphr-logo.jpeg')
+        pygame_icon = pygame.image.load('C:/3ºAno/AI/pyGraphr/src/utils/pygraphr-logo.jpeg')
         pygame.display.set_icon(pygame_icon)
 
         # Load graph data
-        self.graph_path = "graphs/graph.txt"
+        self.graph_path = "C:/3ºAno/AI/pyGraphr/src/graphs/graph.txt"
         self.graph = Graph(self.graph_path)
 
         # Initialize the GUI Manager

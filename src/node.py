@@ -11,6 +11,9 @@ class Node:
         self.heuristic = heuristic
         self.color = Color.BLUE.value
         self.visit_order = None
+    
+    def set_heuristic(self, heuristic):
+        self.heuristic = heuristic
 
     def set_color(self, color):
         self.color = color
